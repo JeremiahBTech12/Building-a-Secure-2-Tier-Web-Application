@@ -1,0 +1,13 @@
+1. Create new Virtual Network within a new resource group. Name/ region/ IP addresses/ and create 2 separate subnets.
+2. Deploy the public web server VM.
+3. Ensure public web server is connected to subnet specific to public traffic.
+4. Download Private key for VM.
+5. Deploy private database server VM.
+6. Use existing key for this VM as well.
+7. Allow only SSH Port 22 traffic to this VM.
+8. Make sure the private subnet created for Database vm has no public IP.
+9. Validate connectivity between servers by getting the private ip address of the database server.
+10. Open terminal and SSH into web server. Use log in credentials and key you downloaded to device.
+11. From inside the web server, try to ping the database server. 
+12. Once replies are seen, stop the ping.
+13. Configure the NSG of database VM by creating a new inbound rule allowing all traffic from the web server.
